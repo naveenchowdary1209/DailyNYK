@@ -1,0 +1,23 @@
+{% extends 'navtemp/bthm.html' %}
+{% block title %} Details {% endblock %}
+{% block content %}
+<div class="container">
+	<div class="row mt-5 mx-2">
+		<div class="card col-md-4 mx-2">
+			<h4 class="text-danger">profile image</h4>
+			<div class="card-body">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUkIq9DjIgYbGgIenjkjA-tkr3mN1_bBnsEw&usqp=CAU" height="200px" width="200px">
+		</div>
+	</div>
+	<div class="card col-md-7">
+			<h4 class="text-info">user details</h4>
+			<div class="">
+				<h2><label class="text_warning">FirstName: {{d.info}}</label></h2>
+				<h2><label class="text_warning">LastName: {{d.info1}}</label></h2>
+				<h2><label class="text_warning">age: {{d.info2}}</label></h2>
+				<h2><label class="text_warning">Email: {{d.info3}}</label></h2>
+			</div>
+	</div>
+				
+{% endblock %}
+
